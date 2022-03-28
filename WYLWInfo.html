@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>What's your life worth project info</title>
+
+    <link rel="stylesheet" href="PortfolioStylesheet.css">
+</head>
+<body>
+    <div class="HeaderBlock">
+        <h1 class="HeaderTitle">What's your life worth?</h1>
+        <h3>Game</h3>
+    </div>
+
+    <div class="ButtonRibbon" id="StickyRibbon">
+        <div class="ButtonAlignment">
+            <button id="PortfolioButton">Portfolio</button>
+            <button id="AboutMeButton">About me</button>
+        </div>
+    </div>
+
+    <div class="ProjectContainer">
+        <div class="ProjectInfoContainer">
+            <div class="VideoContainer">
+                <iframe class="Video" src="https://www.youtube.com/embed/aK0Fi9hLEtE"></iframe>
+            </div>
+
+            <div class="TextContainer">
+                <h4>The project</h4>
+                <p>
+                    Being an assignment for Game Mechanics, we had six weeks time to start from 2 random words and end with a small game. There were no restrictions on genre,
+                    we had to use Unity, and we worked alone on the project.<br/>
+                    The game I created, <em>What's your life worth</em>, is a bullethell about an adventurer finding a magic bow and fighting his way to the end of a dungeon.
+                    While the project I managed to make in those six weeks only contains a few chambers, the base idea is there - the player can upgrade his bow in every room, at the cost of some hp.
+                    You can also choose to heal, but then you lose the opportunity on an upgrade that might be the difference between life and death in the next room. That way, I tried to <b>create
+                    a choice</b> that's more then a mindless click on the "upgrade" button.<br/>
+                </p>
+
+                <h4>A learning process</h4>
+                <p>
+                    I had a little bit of experience in Unity, but I never really dived deep into it. It did mean that I got started up very quickly, following the same tutorials as before, to
+                    refresh the things I had used before.<br />
+                    After that, however, many things were trial and error, using documentation and experimentation. In the end, I got a decent grasp on the <b>basics of Unity</b>, and I <b>learned some C#</b> in the
+                    process.
+                </p>
+
+                <h4>Shooting</h4>
+                <p>
+                    The function that handles shooting has to be the code I spend - relatively speaking - the most time on. Everything that shoots uses it, enemies <em>and</em> player. From the simplest one-bullet-per-second
+                    to more complex waves of bullets in all directions, this <b>one function could handle all</b> of it.
+                    <img class="ProjectImage" src="Images/WYLW_Code01.png" alt="Code snippet: shooting function." />
+                    Once this function in the base class was done, all I needed to do for enemies was derive from it,
+                    setup some simple AI, and call the function with the right parameters.
+                    <img class="ProjectImage" src="Images/WYLW_Code02.png" alt="Code snippet: ai calling shooting function." />
+                </p>
+
+
+                <h4>Links</h4>
+                <p>
+                    The <a href="https://blacksilverfox.itch.io/whats-your-life-worth" target="_blank">Itch.io</a> page of the game.<br />
+                    A <a href="https://github.com/JudithVerdonckJV/WhatsYourLifeWorth" target="_blank">Github</a> repository containing all of my scripts.<br />
+                </p>
+            </div>
+        </div>
+
+        <div class="ProjectImageContainerFlex">
+            <div class="ProjectImageContainer">
+                <img class="ProjectImage" src="Images/WYLW_0.png" alt="What's your life worth? screenshot 0" />
+                <img class="ProjectImage" src="Images/WYLW_2.png" alt="What's your life worth? screenshot 2" />
+                <img class="ProjectImage" src="Images/WYLW_3.png" alt="What's your life worth? screenshot 3" />
+                <img class="ProjectImage" src="Images/WYLW_4.png" alt="What's your life worth? screenshot 4" />
+            </div>
+        </div>
+    </div>
+
+    <script src="PortfolioScript.js"></script>
+</body>
+</html>
